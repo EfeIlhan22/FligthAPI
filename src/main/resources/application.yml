@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-csmau0d6l47c73ep7h0g-a.oregon-postgres.render.com/hocasavar_api
+    username: hocasavar_api_user
+    password: z75o2MF1UDBUtqgx4KQXMmuV7pRhhaoP
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
