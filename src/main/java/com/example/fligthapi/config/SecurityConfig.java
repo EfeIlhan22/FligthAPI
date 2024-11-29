@@ -56,8 +56,8 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
                     .requestMatchers("/admin/v1/**").hasRole("ADMIN") // Admin uç noktaları için yetki kontrol
                     .requestMatchers("/api/auth/v1/**").permitAll() // Kimlik doğrulama ile ilgili uç noktalar herkes için açık
                     .requestMatchers("/api/flights/v1/**").permitAll() // Flight API uç noktalarını herkesin erişebilmesi için açık
-                    .anyRequest().permitAll()
                     .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()// Diğer tüm istekler serbest
+                    .anyRequest().permitAll()
 
             );
 
